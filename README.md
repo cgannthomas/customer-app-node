@@ -29,6 +29,7 @@ It allows users to **create**, **update**, **view**, and **delete** customers ef
 ---
 
 ## 📁 Folder Structure
+
 ```bash
 customer-app/
 ├── controllers/ 
@@ -53,25 +54,30 @@ customer-app/
 ├── .env
 └── README.md
 
-
 ---
+
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
+
      ```bash
      git clone https://github.com/yourusername/customer-app.git
      cd customer-app
 2. **Install dependencies**
+
    ```bash
     npm install
 3. **Update env data as per your needs**
+
     ```bash
     PORT=5000
     MONGO_URI=mongodb://127.0.0.1:27017/customer-app
 4. **Run the app**
+
     ```bash
     npm start / npm run dev (or for development with auto-reload)
 5. **Visit the app**
+
     ```bash
     http://localhost:5000
 
