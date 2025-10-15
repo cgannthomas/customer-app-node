@@ -55,7 +55,6 @@ customer-app/
 
 
 ---
-
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
