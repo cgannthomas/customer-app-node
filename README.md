@@ -29,6 +29,7 @@ It allows users to **create**, **update**, **view**, and **delete** customers ef
 ---
 
 ## 📁 Folder Structure
+```bash
 customer-app/
 ├── controllers/ 
 │ ├── customerController.js
