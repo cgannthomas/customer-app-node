@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col-sm-8">
+    <h2><%= title %></h2>
+  </div>
+  <div class="col-sm-4">
+    <a href="/" style="font-size:16px; color:#333; background:#fff; border:none; display:inline-flex; align-items:center; gap:8px; padding:6px 10px; cursor:pointer;">
+      <!-- paste the SVG here or use <img src="chevron-left.svg"> -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" role="img" aria-label="Back">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/>
+      </svg>
+      Back to Home
+    </a>
+  </div>
+</div>
+
+
+<div class="item_align">
+<form id="cutomerForm" data-action="<%= action %>" method="<%= method %>">
+  <div class="row">
+    <input type="hidden" id="docId" value="<%= id %>">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>Customer ID:</label>
+      </div>
+      <div class="col-sm-4"><input name="customerid" id="customerid">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>First Name:</label>
+      </div>
+      <div class="col-sm-4"><input name="firstname" id="firstname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>Last Name:</label>
+      </div>
+      <div class="col-sm-4"><input name="lastname" id="lastname">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>Address:</label>
+      </div>
+      <div class="col-sm-4"><input name="address" id="address">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>City:</label>
+      </div>
+      <div class="col-sm-4"><input name="city" id="city">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>Province:</label>
+      </div>
+      <div class="col-sm-4"><input name="province" id="province">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+      <label>Postal Code:</label>
+    </div>
+      <div class="col-sm-4"><input name="postalcode" id="postalcode">
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12" class="item_align">
+      <div id="SuccessMsg"></div>
+      <div id="errorMsg"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="item_align">
+        <button class="button" type="button" id="resetBtn">Reset</button>
+        <button class="button" type="submit" id="addBtn"><%= buttonText %></button>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
